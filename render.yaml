@@ -1,8 +1,8 @@
 services:
   # A Docker web service
   - type: web
-    name: hngx_step1
-    runtime: python3.11
+    name: hngx_step2
+    runtime: python
     plan: free
     autoDeploy: false
     buildCommand: pip install -r requirements.txt
