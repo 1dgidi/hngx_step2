@@ -1,0 +1,9 @@
+services:
+  # A Docker web service
+  - type: web
+    name: hngx_step1
+    runtime: python3.11
+    plan: free
+    autoDeploy: false
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
