@@ -72,7 +72,7 @@ def update_person(person: schemas.Person, response: Response, db: Session = Depe
 
 
 @app.delete('/api/{person_id}', status_code=204)
-async def delete_person(person_id: int, db: Session = Depends(get_db)):
+def delete_person(person_id: int, db: Session = Depends(get_db)):
   try:
     crud.delete_person(db=db, person_id=person_id)
   except UnmappedInstanceError:
@@ -84,7 +84,8 @@ async def delete_person(person_id: int, db: Session = Depends(get_db)):
     # check to see if person is still in database
     try:
       db_person = crud.get_person(db=db, person_id=person_id)
-    except OperationalError:
+      assert db_person is not None
+    except AssertionError:
       return {}
     else:
       raise HTTPException(
