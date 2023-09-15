@@ -2,7 +2,7 @@
 
 ## UML Diagram for the Project
 
-![UML diagram](https://avatars0.githubusercontent.com/u/29962968?s=400&u=7753a408ed02e51f88a13a5d11014484bc4d80ee&v=4)
+![UML diagram](https://github.com/1dgidi/hngx_step2/blob/documentation/resource/uml.png)
 
 ## Installation Guide
 * Clone this repository [here](https://github.com/1dgidi/hngx_step2.git).
