@@ -2,8 +2,6 @@
 
 The API has been hosted [here](https://hngx-stage2.onrender.com/api)
 
-A full API documentation can be found [here](https://hngx-stage2.onrender.com/docs) or [here](https://hngx-stage2.onrender.com/redoc)
-
 ## UML Diagram for the Project
 
 ![UML diagram](https://github.com/1dgidi/hngx_step2/blob/documentation/resource/uml.png)
