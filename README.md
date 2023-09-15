@@ -1,6 +1,6 @@
 # HNGx Stage 2
 
-The API has been hosted [here](https://hngx-stage2.onrender.com)
+The API has been hosted [here](https://hngx-stage2.onrender.com/api)
 
 A full API documentation can be found [here](https://hngx-stage2.onrender.com/docs) or [here](https://hngx-stage2.onrender.com/redoc)
 
