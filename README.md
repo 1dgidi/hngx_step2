@@ -41,12 +41,84 @@ Connect to the API using Postman on port 8000.
 | PUT | /api/ | To update the details of a person |
 | DELETE | /api/:person_id | To delete a person |
 
-## Example Usage
+## Request and Response Format
+### Create a **person**
 **Endpoint:** `/api/`
 
 **Method:** `POST`
 
-**Description:** Create a **person**
+**Request:**
+```http
+POST /api/
+Content-Type: application/json
+
+{
+  "name": <person_name>
+}
+```
+**Response**
+```json
+{
+    "name": <person_name>,
+    "id": <person_id>
+}
+```
+
+### Retrieve a person's details
+**Endpoint:** `/api/:person_id`
+
+**Method:** `GET`
+
+**Request:**
+```http
+GET /api/:person_id
+```
+**Response**
+```json
+{
+    "name": <person_name>,
+    "id": <person_id>
+}
+```
+
+### Update a person's details
+**Endpoint:** `/api/`
+
+**Method:** `PUT`
+
+**Request:**
+```http
+PUT /api/
+Content-Type: application/json
+
+{
+  "name": <person_name>
+  "id": <person_id>
+}
+```
+**Response**
+```json
+{}
+```
+### Delete a person
+**Endpoint:** `/api/:person_id`
+
+**Method:** `DELETE`
+
+**Request:**
+```http
+DELETE /api/:person_id
+```
+**Response**
+```json
+{}
+```
+
+## Example Usage
+### Create a person
+**Endpoint:** `/api/`
+
+**Method:** `POST`
 
 **Request:**
 ```http
@@ -65,11 +137,11 @@ Content-Type: application/json
 }
 ```
 
+###  Retrieve the details of a person
+
 **Endpoint:** `/api/:person_id`
 
 **Method:** `GET`
-
-**Description:** Retrieve the details of a **person**
 
 **Request:**
 ```http
